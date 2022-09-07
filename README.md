@@ -16,6 +16,8 @@ Tested with Python 3.7. Extra packages required are Shapely, face_alignment, spi
 
 ### Usage
 
+First download the auxiliary 3D data required from this [[link](https://drive.google.com/file/d/1ZL66ZWivvNKZ-gcBIDmjbmzpMf_gimOi/view?usp=sharing)] and place it into `3D_data' folder.
+
 Simply run main.py. The following options can be set:
 
 --src_path : path of the source face image

@@ -4,7 +4,7 @@ Official implementation of the paper "What makes you, you? Analyzing recognition
 
 [[ArXiv](https://arxiv.org/pdf/2206.11759.pdf)]
 
-![alt text](https://github.com/clferrari/FacePartsSwap/blob/master/conf/method.png)
+![alt text](https://github.com/clferrari/FacePartsSwap/blob/main/conf/method.png)
 
 ## Changelog
 

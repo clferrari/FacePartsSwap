@@ -12,7 +12,7 @@ Official implementation of the paper "What makes you, you? Analyzing recognition
 
 ### Requirements
 
-Tested with Python 3.7. Extra packages required are Shapely, face_alignment, spicy.
+Tested with Python 3.7. Extra packages required are Shapely, face_alignment (https://pypi.org/project/face-alignment/), scipy.
 
 ### Usage
 
@@ -52,3 +52,11 @@ If you find this work useful, please cite us!!
 }
 
 ```
+
+### License
+
+The software is licensed under a Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License.(see LICENSE).
+
+### Contacts
+
+For any inquiry, feel free to drop an email to ferrari.claudio88@gmail.com

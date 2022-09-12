@@ -8,11 +8,14 @@ Official implementation of the paper "What makes you, you? Analyzing recognition
 
 ## Changelog
 
+12 Sept. 2022 - Added missing files and requirements
 07 Sept. 2022 - Repository created
 
 ### Requirements
 
-Tested with Python 3.7. Extra packages required are Shapely, face_alignment (https://pypi.org/project/face-alignment/), scipy.
+Tested with Python 3.7. Extra packages required are Shapely, face_alignment (https://pypi.org/project/face-alignment/), scipy, matplotlib (ver 3.0).
+
+The code and model to segment the face are borrowed from https://github.com/zllrunning/face-parsing.PyTorch. The pre-trained model can be found in res/cp folder.
 
 ### Usage
 
@@ -25,6 +28,17 @@ Simply run main.py. The following options can be set:
 --part : part to be swapped (face, nose, eyes, mouth, eyebrows)
 --debug : if True, saves intermediate results
 --cropImg : if the face needs to be detected and cropped, this can be set to True
+
+
+### Limitations
+
+Some known limitations of the approach, as described in the paper, are:
+
+1. In case of landmark detection errors or strong pose differences, the method can fail in performing the swap, mostly for the entire face. 
+
+2. Difficulty in handling eyeglasses
+
+Help us making the method more robust by reporting any issues you find using our code!
 
 ### Citation
 

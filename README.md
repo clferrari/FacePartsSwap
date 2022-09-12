@@ -22,7 +22,7 @@ The code and model to segment the face are borrowed from https://github.com/zllr
 
 First download the auxiliary 3D data required from this [[link](https://drive.google.com/file/d/1ZL66ZWivvNKZ-gcBIDmjbmzpMf_gimOi/view?usp=sharing)] and place it into `3D_data' folder.
 
-Simply run main.py. The following options can be set:
+Simply run main_c.py to use the default options. The following can be set:
 
 --src_path : path of the source face image
 

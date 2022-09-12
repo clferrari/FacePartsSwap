@@ -9,6 +9,7 @@ Official implementation of the paper "What makes you, you? Analyzing recognition
 ## Changelog
 
 12 Sept. 2022 - Added missing files and requirements
+
 07 Sept. 2022 - Repository created
 
 ### Requirements
@@ -24,9 +25,13 @@ First download the auxiliary 3D data required from this [[link](https://drive.go
 Simply run main.py. The following options can be set:
 
 --src_path : path of the source face image
+
 --dst_path : path of the target face image
+
 --part : part to be swapped (face, nose, eyes, mouth, eyebrows)
+
 --debug : if True, saves intermediate results
+
 --cropImg : if the face needs to be detected and cropped, this can be set to True
 
 

@@ -499,6 +499,15 @@ def face_swap(img_path, img2_path, *parts_to_swap, visDebug = False, cropImg = F
     img2_head_noface = cv2.bitwise_and(img2, img2, mask=img2_face_mask)
     result = cv2.add(img2_head_noface, img2_new_face)
 
+    # Minor correction: if the two masks do not overlap, complete missing pixels with original image
+    black_pixels = np.where(
+        (result[:, :, 0] < 1) &
+        (result[:, :, 1] < 1) &
+        (result[:, :, 2] < 1)
+    )
+    result[black_pixels] = img2[black_pixels]
+    # ---------------------------
+
     (x, y, w, h) = cv2.boundingRect(convexhull2)
     center_face2 = (int((x + x + w) / 2), int((y + y + h) / 2))
 

@@ -8,9 +8,11 @@ Official implementation of the paper "What makes you, you? Analyzing recognition
 
 ## Changelog
 
-12 Sept. 2022 - Added missing files and requirements
+16 Nov. 2022 - Bug fix: solved gradient problem for misaligned swapping masks.
 
-07 Sept. 2022 - Repository created
+12 Sep. 2022 - Added missing files and requirements.
+
+07 Sep. 2022 - Repository created.
 
 ### Requirements
 

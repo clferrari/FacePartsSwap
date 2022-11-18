@@ -8,6 +8,8 @@ Official implementation of the paper "What makes you, you? Analyzing recognition
 
 ## Changelog
 
+18 Nov. 2022 - Bug fix: solved triangulation issue when swapping symmetric parts (eyes, eyebrows)
+
 16 Nov. 2022 - Bug fix: solved gradient problem for misaligned swapping masks.
 
 12 Sep. 2022 - Added missing files and requirements.

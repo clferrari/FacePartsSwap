@@ -5,11 +5,11 @@ import argparse
 
 parser = argparse.ArgumentParser(description='Options')
 
-parser.add_argument('--src_path', dest='src_path', action='store_true', default='./images_test/194.jpg', help='Source image path')
-parser.add_argument('--dst_path', dest='dst_path', action='store_true', default='./images_test/196.jpg', help='Target image path')
-parser.add_argument('--part', dest='part', action='store_true', default='mouth', help='Part to be swapped')
-parser.add_argument('--debug', dest='debug', action='store_true', default=True, help='save debug')
-parser.add_argument('--cropImg', dest='cropImg', action='store_true', default=False, help='Crop face')
+parser.add_argument('--src_path', dest='src_path', default='./images_test/185.jpg', help='Source image path')
+parser.add_argument('--dst_path', dest='dst_path', default='./images_test/196.jpg', help='Target image path')
+parser.add_argument('--part', dest='part', default='eyes', help='Part to be swapped')
+parser.add_argument('--debug', dest='debug', default=True, help='save debug')
+parser.add_argument('--cropImg', dest='cropImg', default=False, help='Crop face')
 
 args = parser.parse_args()
 

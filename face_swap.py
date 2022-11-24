@@ -528,11 +528,14 @@ def face_swap(img_path, img2_path, *parts_to_swap, visDebug = False, cropImg = F
 
     # Face swapped (putting 1st face into 2nd face)
     convhull2 = [item for chull2 in convexhull2 for item in chull2]
-    img2_face_mask = np.zeros_like(img2_gray)
-    img2_head_mask = cv2.fillConvexPoly(img2_face_mask, np.array(convhull2), 255)
-    img2_face_mask = cv2.bitwise_not(img2_head_mask)
 
+    img2_face_mask = np.zeros_like(img2_gray)
+    for chull2 in convexhull2:
+        img2_head_mask = cv2.fillConvexPoly(img2_face_mask, np.array(chull2), 255)
+
+    img2_face_mask = cv2.bitwise_not(img2_head_mask)
     img2_head_noface = cv2.bitwise_and(img2, img2, mask=img2_face_mask)
+
     result = cv2.add(img2_head_noface, img2_new_face)
 
     # Minor correction: if the two masks do not overlap, complete missing pixels with original image
